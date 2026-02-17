@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM & Business Automation | Cloudzord</title>
+    <link rel="icon" type="image/png" href="cloudzord_image.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg-page: #f2f2f7;
+            --glass: rgba(255, 255, 255, 0.82);
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-page);
+            color: #1d1d1f;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 2.5rem;
+        }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Pulse effect for "Automation" feel */
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center py-6 px-4">
+        <div class="glass-card flex items-center justify-between px-8 py-3 w-full max-w-5xl rounded-full">
+          <a href="index.html" class="flex items-center gap-2">
+    <img 
+        src="cloudzord_image.png" 
+        alt="Cloudzord Logo" 
+        class="w-6 h-6 object-contain shrink-0"
+    >
+    <span class="font-black text-sm tracking-tighter uppercase">Cloudzord</span>
+</a>
+            <a href="start-project.html" class="bg-black text-white px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest hover:scale-105 transition-all">Start Project</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="mb-6 reveal active">
+                <span class="pulse-dot"></span>
+                <span class="text-[10px] font-black uppercase tracking-widest text-green-600">Active Systems Engineering</span>
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter uppercase mb-8 reveal active">
+                Smart <span class="text-gray-400">Workflows.</span> <br> Zero Effort.
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-gray-500 font-medium leading-relaxed mb-12 reveal active">
+                We build intelligent bridges between your apps. Automate your leads, sync your CRM, and reclaim hours of your week.
+            </p>
+            
+            <div class="glass-card p-12 max-w-4xl mx-auto reveal active bg-white/50">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8 opacity-60">
+                    <div class="w-24 h-24 rounded-2xl bg-gray-100 flex items-center justify-center border-2 border-dashed border-gray-300">
+                        <i data-lucide="mail" class="w-8 h-8"></i>
+                    </div>
+                    <i data-lucide="arrow-right" class="w-6 h-6 text-gray-300 hidden md:block"></i>
+                    <div class="w-32 h-32 rounded-3xl bg-black flex items-center justify-center text-white">
+                        <i data-lucide="cpu" class="w-12 h-12"></i>
+                    </div>
+                    <i data-lucide="arrow-right" class="w-6 h-6 text-gray-300 hidden md:block"></i>
+                    <div class="w-24 h-24 rounded-2xl bg-gray-100 flex items-center justify-center border-2 border-dashed border-gray-300">
+                        <i data-lucide="users" class="w-8 h-8"></i>
+                    </div>
+                </div>
+                <p class="mt-8 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">Automated Lead Distribution System</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="glass-card p-10 reveal">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="git-merge" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-black uppercase mb-4">Lead Routing</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed font-medium">Instantly send new website leads to your sales team’s Slack, CRM, or email without lifting a finger.</p>
+                </div>
+                <div class="glass-card p-10 reveal" style="transition-delay: 0.1s;">
+                    <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="refresh-ccw" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-black uppercase mb-4">Data Sync</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed font-medium">Keep your customer data consistent across Shopify, HubSpot, and Mailchimp automatically.</p>
+                </div>
+                <div class="glass-card p-10 reveal" style="transition-delay: 0.2s;">
+                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-black uppercase mb-4">Auto-Scheduling</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed font-medium">Connect your booking software to your CRM to trigger personalized follow-ups after every meeting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-white/40">
+        <div class="max-w-5xl mx-auto text-center reveal">
+            <h2 class="text-4xl font-black tracking-tighter uppercase mb-12">Tools We Integrate</h2>
+            <div class="flex flex-wrap justify-center gap-10 opacity-30 grayscale hover:grayscale-0 transition-all">
+                <span class="font-black text-2xl tracking-tighter">Shopify</span>
+                <span class="font-black text-2xl tracking-tighter">HubSpot</span>
+                <span class="font-black text-2xl tracking-tighter">Zapier</span>
+                <span class="font-black text-2xl tracking-tighter">Slack</span>
+                <span class="font-black text-2xl tracking-tighter">Notion</span>
+                <span class="font-black text-2xl tracking-tighter">Airtable</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto glass-card p-16 md:p-24 text-center reveal">
+            <h2 class="text-4xl md:text-6xl font-black tracking-tighter uppercase mb-6">Setup from $1,200</h2>
+            <p class="text-gray-500 font-medium mb-12 max-w-xl mx-auto">We don't just "set it and forget it." We build robust, error-proof systems that grow with your business volume.</p>
+            <a href="start-project.html" class="inline-block bg-black text-white px-12 py-6 rounded-2xl font-black text-xl uppercase tracking-tighter hover:scale-105 transition-all shadow-2xl">
+                Automate My Business
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center">
+        <p class="text-gray-400 font-bold text-[10px] uppercase tracking-[0.3em]">© 2026 Cloudzord — Efficiency by Design.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

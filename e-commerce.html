@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Solutions | Cloudzord</title>
+    <link rel="icon" type="image/png" href="cloudzord_image.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg-page: #f2f2f7;
+            --glass: rgba(255, 255, 255, 0.82);
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-page);
+            color: #1d1d1f;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 2.5rem;
+        }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Custom Gradient for E-com flair */
+        .text-gradient {
+            background: linear-gradient(to right, #1d1d1f, #8e8e93);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center py-6 px-4">
+        <div class="glass-card flex items-center justify-between px-8 py-3 w-full max-w-5xl rounded-full">
+           <a href="index.html" class="flex items-center gap-2">
+    <img 
+        src="cloudzord_image.png" 
+        alt="Cloudzord Logo" 
+        class="w-6 h-6 object-contain shrink-0"
+    >
+    <span class="font-black text-sm tracking-tighter uppercase">Cloudzord</span>
+</a>
+            <a href="start-project.html" class="bg-black text-white px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest hover:scale-105 transition-all">Start Project</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter uppercase mb-8 reveal active">
+                Sell <span class="text-gray-400">Globally.</span> <br> <span class="text-gradient">Scale Fast.</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-gray-500 font-medium leading-relaxed mb-12 reveal active">
+                High-converting online stores designed to turn visitors into loyal customers. We build on Shopify and WooCommerce for ultimate reliability.
+            </p>
+            
+            <div class="glass-card p-4 max-w-5xl mx-auto reveal active">
+                <div class="aspect-video bg-zinc-900 rounded-[2rem] overflow-hidden flex items-center justify-center relative shadow-inner">
+                    <div class="text-center">
+                        <i data-lucide="shopping-cart" class="w-16 h-16 text-white/20 mb-4 mx-auto"></i>
+                        <p class="text-[10px] font-bold uppercase tracking-widest text-white/40">E-Commerce Experience Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-black tracking-tighter uppercase">Built for Performance</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-10 reveal">
+                    <i data-lucide="credit-card" class="w-8 h-8 text-blue-500 mb-6"></i>
+                    <h4 class="font-black uppercase mb-4">Secure Checkout</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed font-medium">Frictionless payment processing with Stripe, PayPal, and Apple Pay integration.</p>
+                </div>
+                <div class="glass-card p-10 reveal" style="transition-delay: 0.1s;">
+                    <i data-lucide="smartphone" class="w-8 h-8 text-purple-500 mb-6"></i>
+                    <h4 class="font-black uppercase mb-4">Mobile-First</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed font-medium">Over 70% of sales happen on mobile. Our stores are optimized for the thumb-scroll era.</p>
+                </div>
+                <div class="glass-card p-10 reveal" style="transition-delay: 0.2s;">
+                    <i data-lucide="bar-chart-3" class="w-8 h-8 text-orange-500 mb-6"></i>
+                    <h4 class="font-black uppercase mb-4">Sales Analytics</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed font-medium">Track your revenue, average order value, and conversion rates in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-white/40">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="reveal">
+                <h2 class="text-4xl font-black tracking-tighter uppercase mb-6">The Tech Stack</h2>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">✓</div>
+                        <span class="font-bold uppercase text-xs tracking-widest">Shopify Plus / WooCommerce</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">✓</div>
+                        <span class="font-bold uppercase text-xs tracking-widest">Inventory Management</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">✓</div>
+                        <span class="font-bold uppercase text-xs tracking-widest">Abandoned Cart Recovery</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">✓</div>
+                        <span class="font-bold uppercase text-xs tracking-widest">Custom Email Automations</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal" style="transition-delay: 0.2s;">
+                <div class="glass-card bg-black p-12 text-white shadow-2xl">
+                    <h3 class="text-2xl font-black uppercase mb-4">Pricing</h3>
+                    <p class="text-gray-400 text-sm mb-8 font-medium">Complete end-to-end store setup.</p>
+                    <div class="text-5xl font-black mb-8">Starts $2,499</div>
+                    <a href="start-project.html" class="block text-center bg-white text-black py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-gray-200 transition-all">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6">
+        <div class="max-w-3xl mx-auto text-center reveal">
+            <h2 class="text-5xl font-black tracking-tighter uppercase mb-8">Ready to launch your store?</h2>
+            <a href="start-project.html" class="inline-block bg-black text-white px-10 py-5 rounded-2xl font-bold text-lg uppercase tracking-widest hover:scale-105 transition-all shadow-xl">
+                Start My Project
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center">
+        <p class="text-gray-400 font-bold text-[10px] uppercase tracking-[0.3em]">© 2026 Cloudzord — Selling with Style.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

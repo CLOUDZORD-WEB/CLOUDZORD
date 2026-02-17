@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design & Development | Cloudzord</title>
+    <link rel="icon" type="image/png" href="cloudzord_image.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg-page: #f2f2f7;
+            --glass: rgba(255, 255, 255, 0.82);
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-page);
+            color: #1d1d1f;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 2.5rem;
+        }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center py-6 px-4">
+        <div class="glass-card flex items-center justify-between px-8 py-3 w-full max-w-5xl rounded-full">
+           <a href="index.html" class="flex items-center gap-2">
+    <img 
+        src="cloudzord_image.png" 
+        alt="Cloudzord Logo" 
+        class="w-6 h-6 object-contain shrink-0"
+    >
+    <span class="font-black text-sm tracking-tighter uppercase">Cloudzord</span>
+</a>
+            <a href="start-project.html" class="bg-black text-white px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest hover:scale-105 transition-all">Start Project</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter uppercase mb-8 reveal active">
+                High-End <br> <span class="text-gray-400">Web Design.</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-gray-500 font-medium leading-relaxed mb-12 reveal active">
+                We don't just build websites; we build digital growth engines. Our process combines world-class aesthetics with high-performance engineering.
+            </p>
+            <div class="glass-card p-4 max-w-5xl mx-auto reveal active">
+                <div class="aspect-video bg-gray-200 rounded-[2rem] overflow-hidden flex items-center justify-center group relative">
+                    <i data-lucide="play-circle" class="w-16 h-16 text-white/50 group-hover:scale-110 transition-transform cursor-pointer"></i>
+                    <span class="absolute bottom-6 left-6 text-[10px] font-bold uppercase tracking-widest text-black/40">Showcase Reel 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h2 class="text-4xl font-black tracking-tighter uppercase mb-6">The Process</h2>
+                    <p class="text-gray-500 font-medium mb-8">From initial wireframes to the final deployment, we follow a rigorous 4-step framework to ensure every pixel serves a purpose.</p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span class="font-black text-gray-300 text-2xl">01</span>
+                            <div><h4 class="font-bold uppercase text-sm">Strategy & UX</h4><p class="text-xs text-gray-400 mt-1">Understanding your user's journey and conversion goals.</p></div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-black text-gray-300 text-2xl">02</span>
+                            <div><h4 class="font-bold uppercase text-sm">Visual Interface</h4><p class="text-xs text-gray-400 mt-1">Creating a unique, premium aesthetic for your brand.</p></div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-black text-gray-300 text-2xl">03</span>
+                            <div><h4 class="font-bold uppercase text-sm">Clean Engineering</h4><p class="text-xs text-gray-400 mt-1">Lightweight, fast-loading, and responsive code.</p></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glass-card p-12 bg-black text-white reveal">
+                    <h3 class="text-2xl font-black uppercase mb-8">What's Included</h3>
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="flex items-center gap-4 border-b border-white/10 pb-4">
+                            <i data-lucide="layers" class="w-5 h-5 text-blue-400"></i>
+                            <span class="text-sm font-bold uppercase tracking-widest">UI/UX Design</span>
+                        </div>
+                        <div class="flex items-center gap-4 border-b border-white/10 pb-4">
+                            <i data-lucide="code-2" class="w-5 h-5 text-purple-400"></i>
+                            <span class="text-sm font-bold uppercase tracking-widest">Frontend Development</span>
+                        </div>
+                        <div class="flex items-center gap-4 border-b border-white/10 pb-4">
+                            <i data-lucide="database" class="w-5 h-5 text-orange-400"></i>
+                            <span class="text-sm font-bold uppercase tracking-widest">Backend Integration</span>
+                        </div>
+                        <div class="flex items-center gap-4 border-b border-white/10 pb-4">
+                            <i data-lucide="settings" class="w-5 h-5 text-green-400"></i>
+                            <span class="text-sm font-bold uppercase tracking-widest">CMS Setup</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i data-lucide="zap" class="w-5 h-5 text-yellow-400"></i>
+                            <span class="text-sm font-bold uppercase tracking-widest">SEO & Speed Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto glass-card p-12 md:p-20 text-center reveal">
+            <span class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mb-6 block">Investment</span>
+            <h2 class="text-4xl md:text-6xl font-black tracking-tighter uppercase mb-6">Starting at $1,499</h2>
+            <p class="text-gray-500 font-medium mb-12">Every project is unique. Let's discuss your specific needs and provide a custom quote tailored to your scale.</p>
+            <a href="start-project.html" class="inline-block bg-black text-white px-12 py-6 rounded-2xl font-black text-xl uppercase tracking-tighter hover:scale-105 transition-all shadow-2xl">
+                Start Your Project
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center">
+        <p class="text-gray-400 font-bold text-[10px] uppercase tracking-[0.3em]">© 2026 Cloudzord — Crafting with Precision.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        // Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
